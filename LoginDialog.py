@@ -46,10 +46,6 @@ class LoginDialog(wx.Dialog):
         """
         Check credentials and login
         """
-        # if self.user.GetValue() == "":
-        #     errorlogin = wx.StaticText(self, label="invalid name:", style = wx.ALIGN_LEFT | wx.ST_ELLIPSIZE_MIDDLE)
-        # if self.password.GetValue() == "":
-        #     errorpass = wx.StaticText(self, label="invalid password:")
         user_name = str(self.user.GetValue()).strip() #имя пользователя
         user_password = int(self.password.GetValue())#пароль пользователя
         if user_name == newUser.userName and user_password == newUser.pssword:#сравниваем с данными чипиздрика
